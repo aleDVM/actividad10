@@ -4,13 +4,20 @@ Algoritmo primo
 	divisor = 1
 	cont = 0
 	
-	Mientras num % divisor = 0 Hacer
-		cont = divisor +1
+	Mientras num > divisor Hacer
+		Si num % divisor = 0  Entonces
+			cont = divisor +1
+			
+		SiNo
+			
+		Fin Si
+		divisor = divisor + 1
 	Fin Mientras
 	
-	Si cont  Entonces
-		acciones_por_verdadero
+	Si cont >2 Entonces
+		Escribir "su numero no es primo"
 	SiNo
-		acciones_por_falso
+		Escribir "Su numero es primo"
 	Fin Si
+	
 FinAlgoritmo
